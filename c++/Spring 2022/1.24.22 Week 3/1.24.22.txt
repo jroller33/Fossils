@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	cout << "Travel Time Calculator\n\n";
+
+	int miles;
+	cout << "Enter miles: ";
+	cin >> miles;
+
+	int miles_per_hour;
+	cout << "Enter miles per hour: ";
+	cin >> miles_per_hour;
+
+	cout << endl;
+
+	int hours = miles / miles_per_hour;
+	int minutes = (miles % miles_per_hour) * 60 / miles_per_hour;
+
+	cout << "Estimated travel time\n"
+		<< "Hours: " << hours << endl
+		<< "Minutes: " << minutes << endl;
+
+	return 0;
+}

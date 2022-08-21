@@ -1,0 +1,6 @@
+CODE	PRICE		DISC_PCT	
+strat	699.5		.3
+les_paul	1199		.3
+sg		2517		.52
+fg700s	489.99		.38
+washburn	299.0		.0

@@ -1,0 +1,24 @@
+#include <ifstream>
+#include <string>
+using namespace std;
+
+int main()
+{
+	ifstream input_file;
+	input_file.open("rules.txt");
+	if (input_file)
+	{
+		string line;
+		while (getline(input_file, line))
+		{
+			cout << line << '\n';
+		}
+		input_file.close();
+	}
+	else
+	{
+		cout << "File did not open successfully.";
+	}
+
+	return 0;
+}
